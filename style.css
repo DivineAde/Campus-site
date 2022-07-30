@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.topg{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(15,6,50,.3),rgba(15,6,50,.3));
+  display: flex;
+  padding:  0 5%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+nav{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo{
+  width: 80px;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+margin-right: 50px;
+}
+nav ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+nav ul li a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: yellowgreen;
+  display: block;
+  margin: auto; /* for the line increase and decrease animation*/
+  transition: 0.5s ;
+}
+nav ul li a:hover::after{
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.home-page{
+  text-align: center;
+}
+.home-page h1{
+  color: #fff;
+  font-size: 55px;
+  padding-bottom: 50px;
+  transition: 1s;
+}
+.home-page h1:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+  cursor: pointer;
+}
+.home-page a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #fff;
+  padding: 20px 40px;
+  border-radius: 50px;
+  transition: 1s;
+}
+.home-page a:hover{
+  background-color: greenyellow;
+  color: black;
+  cursor: pointer;
+}
+.home-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
